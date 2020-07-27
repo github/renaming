@@ -22,6 +22,8 @@ Our next step helps users and organization admins that want to ensure all new re
 
 To enable that choice, later this summer we’re adding new user and organization settings to set the default branch name for all newly-created repositories on GitHub.com. These settings will cover all the ways you can create a GitHub repository, including through: [GitHub.com](https://github.com/new), the [GitHub API](https://developer.github.com/v3/guides/getting-started/#create-a-repository), [GitHub Desktop](https://desktop.github.com/), and [GitHub CLI](https://cli.github.com/). If you’re a GitHub Enterprise Server user, we’re also planning to add organization and instance settings to set the default branch name for all newly-created repositories on a GitHub Enterprise Server in version 2.22.
 
+Git 2.28 added a similar setting to control the default branch used when you run `git init` on the command line. Learn more about the new `init.defaultBranch` setting in [the Git 2.28 blog post](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch).
+
 #### From `master` to `main`
 
 `main` is the most popular replacement for `master` that we’re seeing across GitHub. We like it because it’s short, it keeps your muscle memory intact, and it translates well across most languages. We’re using `main` for our newly-created repositories and for the repositories we’re moving now, like [dependabot-core](https://github.com/dependabot/dependabot-core).
