@@ -10,11 +10,15 @@ We’re making changes to GitHub in a few phases, designed to cause as little di
 
 ### Now: supporting early movers 🚚
 
-Some projects on GitHub have already renamed their default branch. As a result, any links to those projects that contained the old branch name would previously have been broken. 
+Some projects on GitHub have already renamed their default branch. As a result, any links to those projects that contained the old branch name would previously have been broken.
 
 So, our first change, shipped on [July 17th](https://github.blog/changelog/2020-07-17-links-to-deleted-branches-now-redirect-to-the-default-branch/), updates GitHub.com to redirect links that contain a deleted branch name to the corresponding link in the repository's default branch.
 
 This change supports projects that have already moved. **If you haven’t moved yet, we recommend not moving right now, and waiting until [later this year](#later-this-year). We’re investing in tools to make the renaming the default branch of an existing repository a seamless experience for both maintainers and contributors.**
+
+### Now: GitHub Pages from any branch 📰
+
+Until recently, GitHub Pages required that you use either the `master` or the `gh-pages` branch. As of [July 31](https://github.blog/changelog/2020-07-31-build-and-deploy-github-pages-from-any-branch-beta/), repositories that use GitHub Pages can now build and deploy from any branch. Publishing to the special `gh-pages` branch will still work the same as it always has, but now you can choose a different branch in your repository as the publishing source.
 
 ### This summer: a configurable default for new repositories 🆕
 
@@ -39,6 +43,5 @@ For existing repositories, renaming the default branch today causes a set of cha
 - Open pull requests need to be retargeted to the new branch
 - Draft releases need to be retargeted to the new branch
 - Branch protection policies need to be transferred to the new branch
-- GitHub Pages expects content in the `master` or `gh-pages` branch
 
-By the end of the year, we'll make it seamless for existing repositories to rename their default branch. When you rename the branch, we’ll retarget your open PRs and draft releases, move your branch protection policies, and more - all automatically. We’re updating GitHub Pages to allow building from any branch. And, we’re also looking into redirecting users who `git fetch` or `git clone` the old branch name to the new branch name (with a warning and instructions to update their local clone), so it’s easy for your contributors to move. You’ll be able to do a rename from GitHub.com, GitHub Desktop, or the CLI.
+By the end of the year, we'll make it seamless for existing repositories to rename their default branch. When you rename the branch, we’ll retarget your open PRs and draft releases, move your branch protection policies, and more - all automatically. And, we’re also looking into redirecting users who `git fetch` or `git clone` the old branch name to the new branch name (with a warning and instructions to update their local clone), so it’s easy for your contributors to move. You’ll be able to do a rename from GitHub.com, GitHub Desktop, or the CLI.
