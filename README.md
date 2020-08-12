@@ -20,19 +20,27 @@ This change supports projects that have already moved. **If you haven’t moved 
 
 Until recently, GitHub Pages required that you use either the `master` or the `gh-pages` branch. As of [July 31](https://github.blog/changelog/2020-07-31-build-and-deploy-github-pages-from-any-branch-beta/), repositories that use GitHub Pages can now build and deploy from any branch. Publishing to the special `gh-pages` branch will still work the same as it always has, but now you can choose a different branch in your repository as the publishing source.
 
-### This summer: a configurable default for new repositories 🆕
+### Now: a configurable default for new repositories 🆕
 
-Our next step helps users and organization admins that want to ensure all new repositories they create use the default branch name of their choice.
+We've heard from users, organization owners, and enterprise administrators that want to ensure all new repositories they create use the default branch name of their choice.
 
-To enable that choice, later this summer we’re adding new user and organization settings to set the default branch name for all newly-created repositories on GitHub.com. These settings will cover all the ways you can create a GitHub repository, including through: [GitHub.com](https://github.com/new), the [GitHub API](https://developer.github.com/v3/guides/getting-started/#create-a-repository), [GitHub Desktop](https://desktop.github.com/), and [GitHub CLI](https://cli.github.com/). If you’re a GitHub Enterprise Server user, we’re also planning to add organization and instance settings to set the default branch name for all newly-created repositories on a GitHub Enterprise Server in version 2.22.
+To enable that choice, on [August 26th](https://github.blog/changelog/2020-08-26-default-branch-for-new-repositories/) we added new user, organization, and enterprise settings to set the default branch name for all newly-created repositories on GitHub.com. These settings cover repositories created through [GitHub.com](https://github.com/new) and the [GitHub API](https://developer.github.com/v3/guides/getting-started/#create-a-repository). If you’re a GitHub Enterprise Server user, these same settings are coming in version 2.23.
 
 Git 2.28 added a similar setting to control the default branch used when you run `git init` on the command line. Learn more about the new `init.defaultBranch` setting in [the Git 2.28 blog post](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch).
 
-#### From `master` to `main`
+[GitHub Desktop](https://desktop.github.com/) will also introduce a default branch setting for new repositories later this month.
+
+#### From `master` to `main` on October 1, 2020
 
 `main` is the most popular replacement for `master` that we’re seeing across GitHub. We like it because it’s short, it keeps your muscle memory intact, and it translates well across most languages. We’re using `main` for our newly-created repositories and for the repositories we’re moving now, like [dependabot-core](https://github.com/dependabot/dependabot-core).
 
-One month after the new settings are available in GitHub.com, we will set the default to `main` for any user or organization that hasn't chosen a default branch for new repositories. We'll do the same in GitHub Enterprise Server 2.23. You can opt out of this at any time by configuring the default branch name for new repositories to `master` or any other word.
+On **October 1, 2020,** if you haven't changed the default branch for new repositories for your user, organization, or enterprise, it will automatically change from **`master`** to **`main`**. You can **opt out of this change** at any time:
+
+1. For users, on the https://github.com/settings/repositories page
+2. For organization owners, on the `https://github.com/organizations/YOUR-ORGANIZATION/settings/repository-defaults` page
+3. For enterprise administrators, on the `https://github.com/enterprises/YOUR-ENTERPRISE/settings/member_privileges` page
+
+This setting **does not impact any of your existing repositories.** Existing repositories will continue to have the same default branch they have now.
 
 <a name="later-this-year"></a>
 
