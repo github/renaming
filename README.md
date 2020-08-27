@@ -36,9 +36,9 @@ Git 2.28 added a similar setting to control the default branch used when you run
 
 On **October 1, 2020,** if you haven't changed the default branch for new repositories for your user, organization, or enterprise, it will automatically change from **`master`** to **`main`**. You can **opt out of this change** at any time:
 
-1. For users, on the https://github.com/settings/repositories page
-2. For organization owners, on the `https://github.com/organizations/YOUR-ORGANIZATION/settings/repository-defaults` page
-3. For enterprise administrators, on the `https://github.com/enterprises/YOUR-ENTERPRISE/settings/member_privileges` page
+1. For [users](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-the-default-branch-name-for-your-repositories), on the https://github.com/settings/repositories page
+2. For [organization owners](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-the-default-branch-name-for-repositories-in-your-organization), on the `https://github.com/organizations/YOUR-ORGANIZATION/settings/repository-defaults` page
+3. For [enterprise administrators](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/enforcing-repository-management-policies-in-your-enterprise-account#enforcing-a-policy-on-the-default-branch-name), on the `https://github.com/enterprises/YOUR-ENTERPRISE/settings/member_privileges` page
 
 This setting **does not impact any of your existing repositories.** Existing repositories will continue to have the same default branch they have now.
 
