@@ -24,7 +24,7 @@ Until recently, GitHub Pages required that you use either the `master` or the `g
 
 We've heard from users, organization owners, and enterprise administrators that want to ensure all new repositories they create use the default branch name of their choice.
 
-To enable that choice, on [August 26th](https://github.blog/changelog/2020-08-26-default-branch-for-new-repositories/) we added new user, organization, and enterprise settings to set the default branch name for all newly-created repositories on GitHub.com. These settings cover repositories created through [GitHub.com](https://github.com/new) and the [GitHub API](https://developer.github.com/v3/guides/getting-started/#create-a-repository). If you’re a GitHub Enterprise Server user, these same settings are coming in version 2.23.
+To enable that choice, on [August 26th](https://github.blog/changelog/2020-08-26-set-the-default-branch-for-newly-created-repositories/) we added new user, organization, and enterprise settings to set the default branch name for all newly-created repositories on GitHub.com. These settings cover repositories created through [GitHub.com](https://github.com/new) and the [GitHub API](https://developer.github.com/v3/guides/getting-started/#create-a-repository). If you’re a GitHub Enterprise Server user, these same settings are coming in version 2.23.
 
 Git 2.28 added a similar setting to control the default branch used when you run `git init` on the command line. Learn more about the new `init.defaultBranch` setting in [the Git 2.28 blog post](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch).
 
