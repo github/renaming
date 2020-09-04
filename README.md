@@ -6,7 +6,7 @@ We're not the only organization in the Git ecosystem making these changes: there
 
 We’re making changes to GitHub in a few phases, designed to cause as little disruption to existing projects as possible.
 
-**If you haven’t renamed your default branch yet waiting until [later this year](#later-this-year). We’re investing in tools to make the renaming the default branch of an existing repository a seamless experience for both maintainers and contributors.**
+**If you haven’t renamed your default branch yet, consider waiting until [later this year](#later-this-year). We’re investing in tools to make renaming the default branch of an existing repository a seamless experience for both maintainers and contributors.**
 
 ## What's already changed
 
