@@ -17,15 +17,17 @@ We’re making changes to GitHub in a few phases, designed to cause as little di
   - These settings cover repositories created through [GitHub.com](https://github.com/new) and the [GitHub API](https://developer.github.com/v3/guides/getting-started/#create-a-repository). Git 2.28 added a similar setting to control the default branch used when you run `git init` on the command line. Learn more about the new `init.defaultBranch` setting in [the Git 2.28 blog post](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch).
   - [GitHub Desktop](https://desktop.github.com/) will also introduce a default branch setting for new repositories later this month.
 
-### On October 1, 2020: newly-created repositories will default to `main`
+## New repositories use `main` as default branch name
 
-On **October 1, 2020,** any new repositories you create will use **`main`** as the default branch, instead of **`master`**. This change **does not impact any of your existing repositories:** existing repositories will continue to have the same default branch they have now.
-
-You can **opt out of this change** at any time. To opt out, set the default branch for new repositories for your user, organization, or enterprise:
+The default branch name for new repositories is now `main`. To set a different default:
 
 1. For [users](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-the-default-branch-name-for-your-repositories), on the https://github.com/settings/repositories page
 2. For [organization owners](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-the-default-branch-name-for-repositories-in-your-organization), on the `https://github.com/organizations/YOUR-ORGANIZATION/settings/repository-defaults` page
 3. For [enterprise administrators](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/enforcing-repository-management-policies-in-your-enterprise-account#enforcing-a-policy-on-the-default-branch-name), on the `https://github.com/enterprises/YOUR-ENTERPRISE/settings/member_privileges` page
+
+Users, organizations, and enterprise that previously selected a default branch for new repositories are not impacted by this change.
+
+Existing repositories are not impacted by this change. [Later this year](#later-this-year), you'll be able to rename the default branch for existing repositories for your user, organization, or enterprise account.
 
 #### Why main?
 
@@ -33,7 +35,7 @@ You can **opt out of this change** at any time. To opt out, set the default bran
 
 <a name="later-this-year"></a>
 
-### Later this year: seamless move for existing repositories 🚀
+## Later this year: seamless move for existing repositories 🚀
 
 For existing repositories, renaming the default branch today causes a set of challenges:
 
