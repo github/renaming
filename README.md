@@ -6,8 +6,6 @@ We're not the only organization in the Git ecosystem making these changes: there
 
 We're making changes to GitHub in a few phases, designed to cause as little disruption to existing projects as possible.
 
-**If you haven't renamed your default branch yet, consider waiting until we've rolled out additional functionality to help with [renaming the default branch of an existing repository](#later-this-year). The goal is to be able to make it as seamless as possible for maintainers and contributors. Thanks to everyone providing feedback. We're testing additional capabilities on our own repositories and will continue rolling this out to everyone in January 2021.**
-
 ## What's already changed
 
 - [We've updated GitHub.com](https://github.blog/changelog/2020-07-17-links-to-deleted-branches-now-redirect-to-the-default-branch/) to redirect links that contain the deleted branch name such as `master` to the corresponding link in the repository's new default branch.
@@ -16,8 +14,10 @@ We're making changes to GitHub in a few phases, designed to cause as little disr
 - [We've added user, organization, and enterprise settings](https://github.blog/changelog/2020-08-26-set-the-default-branch-for-newly-created-repositories/) to set the default branch name for all newly-created repositories on GitHub.com. We're adding the same settings in the 3.0 release of GitHub Enterprise Server.
   - These settings cover repositories created through [GitHub.com](https://github.com/new) and the [GitHub API](https://developer.github.com/v3/guides/getting-started/#create-a-repository). Git 2.28 added a similar setting to control the default branch used when you run `git init` on the command line. Learn more about the new `init.defaultBranch` setting in [the Git 2.28 blog post](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch).
   - [GitHub Desktop](https://desktop.github.com/) has introduced a default branch setting for new repositories.
+- [We've made it easier to rename an existing branch](#rename-existing)
 
-## New repositories use `main` as default branch name
+ 
+## New repositories use `main` as the default branch name
 
 The default branch name for new repositories created on GitHub is now `main`. To set a different default:
 
@@ -31,20 +31,23 @@ Users, organizations, and enterprises that previously selected a default branch 
 
 `main` is the most popular replacement for `master` that we're seeing across GitHub. We like it because it's short, it keeps your muscle memory intact, and it translates well across most languages. We're using `main` for our newly-created repositories and for the repositories we're moving now, like [dependabot-core](https://github.com/dependabot/dependabot-core).
 
-<a name="later-this-year"></a>
+<a name="rename-existing"></a>
 
-## Creating a seamless move for existing repositories 🚀
+## Renaming existing branches
 
-For existing repositories, renaming the default branch today causes a set of challenges:
-
-- Open pull requests need to be retargeted to the new branch
-- Draft releases need to be retargeted to the new branch
-- Branch protection policies need to be transferred to the new branch
-
-Beginning in January 2021, we'll begin rolling out functionality to make it easier to rename the default branch of an existing repository:
+You can now rename any branch, including the default branch, from the web.
 
 ![Rename default branch dialog](rename-default-branch-dialog.png)
 
-Open pull requests and draft releases will be automatically retargeted, branch protection rules will be moved, and to help contributors, prompts will guide them on how to update their local configurations:
+Renaming a branch will:
 
-![Prompt to update local Git configuration](local-config-prompt.png)
+- Re-target any open pull requests
+- Update any draft releases based on the branch
+- Move any branch protection rules that explicitly reference the old name
+- Update the branch used to build GitHub Pages, if applicable
+- Show a notice to repository contributors, maintainers, and admins on the repository homepage with instructions to update local copies of the repository
+- Show a notice to contributors who `git push` to the old branch
+- Redirect web requests for the old branch name to the new branch name
+- Return a "Moved Permanently" response in API requests for the old branch name
+
+Learn more about [renaming a branch](https://docs.github.com/github/administering-a-repository/renaming-a-branch).
