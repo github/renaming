@@ -15,7 +15,7 @@ We're making changes to GitHub in a few phases, designed to cause as little disr
   - These settings cover repositories created through [GitHub.com](https://github.com/new) and the [GitHub API](https://developer.github.com/v3/guides/getting-started/#create-a-repository). Git 2.28 added a similar setting to control the default branch used when you run `git init` on the command line. Learn more about the new `init.defaultBranch` setting in [the Git 2.28 blog post](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch).
   - [GitHub Desktop](https://desktop.github.com/) has introduced a default branch setting for new repositories.
 - [We've made it easier to rename an existing branch](#rename-existing)
-
+- [We've updated Gists to use your preferred branch name](https://github.blog/changelog/2022-02-10-gists-now-support-alternative-default-branch-names/)
  
 ## New repositories use `main` as the default branch name
 
@@ -27,7 +27,7 @@ The default branch name for new repositories created on GitHub is now `main`. To
 
 Users, organizations, and enterprises that previously selected a default branch for new repositories are not impacted by this change. Existing repositories are also not impacted by this change.
 
-#### Why main?
+### Why main?
 
 `main` is the most popular replacement for `master` that we're seeing across GitHub. We like it because it's short, it keeps your muscle memory intact, and it translates well across most languages. We're using `main` for our newly-created repositories and for the repositories we're moving now, like [dependabot-core](https://github.com/dependabot/dependabot-core).
 
