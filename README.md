@@ -8,7 +8,7 @@ We're making changes to GitHub in a few phases, designed to cause as little disr
 
 ## What's already changed
 
-- [We've updated GitHub.com](https://github.blog/changelog/2020-07-17-links-to-deleted-branches-now-redirect-to-the-default-branch/) to redirect links that contain the deleted branch name such as `master` to the corresponding link in the repository's new default branch.
+- [We've updated GitHub.com](https://github.blog/changelog/2020-07-17-links-to-deleted-branches-now-redirect-to-the-default-branch/) to redirect links that contain the deleted brancfenew default branch.
 - [We've updated GitHub Pages](https://github.blog/changelog/2020-07-31-build-and-deploy-github-pages-from-any-branch-beta/) to build and deploy from any branch.
   - Note: publishing to the special `gh-pages` branch will still work the same as it always has, but now you can choose any other branch in your repository as the publishing source.
   - Note: If the branch used by GitHub Pages is renamed, your GitHub Pages site will be unpublished. Pushing a new commit to the renamed branch will republish the site.
